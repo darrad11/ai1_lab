@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css1.css" id="stylCSS">
+	</head>
+ 
+	<body>
+		<div class="header">
+			<h1>GIS - Geographic Information System</h1>
+		</div>
+		
+		<div>
+			<h2>Strona poświęcona Geographic Information System (GIS)</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-3 col-s-3 menu">
+				<h2>Menu</h2>
+					<ul>
+						<li><a href="#sekcja1">GIS - co to?</a></li>
+						<li><a href="#sekcja2">Zastosowania GIS</a></li>
+						<li><a href="#sekcja3">Możliwości GIS</a></li>
+						<li><a href="#sekcja4">Linki</a></li>
+					</ul>
+			</div>
+
+			<div class="col-6 col-s-9">			
+				<div class="separator"></div>
+				
+				<section id="sekcja1">
+					<h2>GIS - co to?</h2>
+						<p>Geographic Information System (GIS, pol. system przetwarzania informacji geograficznej) to potężne narzędzie, które umożliwia gromadzenie, analizę, przetwarzanie i wizualizację danych geoprzestrzennych. Działa na zasadzie zbierania informacji o miejscach i zjawiskach na powierzchni Ziemi, a następnie przetwarzania ich w formie map i raportów.</p>
+						<p><img src="R.jpg" alt="GIS - wizualizacja"></p>
+				</section>
+
+				<div class="separator"></div>
+				
+				<section id="sekcja2">
+					<h2>Zastosowania GIS</h2>
+						<p>GIS znajduje zastosowanie w wielu dziedzinach</p>
+							<ol>
+								<li>Planowanie przestrzenne - wykorzystywane w urbanizacji, gospodarce leśnej, gospodarce wodnej, przy budowie dróg, itd.</li>
+								<li>Zarządzanie danymi geoprzestrzennymi - gromadzenie i analiza danych geograficznych.</li>
+								<li>Analiza zjawisk atmosferycznych - monitorowanie i prognozy warunków meterologicznych, także wpieranie zarządzania kryzysowego w czasie katastrof naturalnych.</li>
+								<li>Ochrona środowiska - monitorowanie zanieczyszczeń i innych zagrożeń dla ekosystemu.</li>
+							</ol>
+				</section>
+				
+				<div class="separator"></div>
+				
+				<section id="sekcja3">
+					<h2>Możliwości GIS</h2>
+						<p>Oto niektóre z tych możliwości</p>
+							<ul>
+								<li>Tworzenie interaktywnych map z danymi geoprzestrzennymi (Google Maps, OpenStreetMap, Flightradar24, itp.).</li>
+								<li>Wizualizacja danych za pomocą różnych warstw i symboli na mapach.</li>
+								<li>Analiza przestrzenna, identyfikacja wzorców i trendów w danych geograficznych.</li>
+								<li>Różnego rodzaju raporty i prezentacje, oparte na danych geoprzestrzennych.</li>
+								<li>Klasyfikacja obiektów geograficznych (także przez AI sztuczną inteligencję)</li>
+								<li>Reagowanie na katastrofy natyralne i inne sytuacje kryzysowe, możliwe w czasie rzeczywistym.</li>
+							</ul>
+						<p><img src="pexels-matheus-bertelli-4558710.jpg" alt="Mapa i nawigacja"></p>
+				</section>
+				
+				<div class="separator"></div>
+				
+			</div>
+  
+			<div class="col-3 col-s-12">
+				<section id="sekcja4">
+					<div class="aside">
+						<h2>Linki</h2>
+						<!-- mam nadzieje ze to moze byc reklama -->
+							<h3>Zmiana CSS</h3>
+						<!-- przyciski do zmiany stylu CSS -->
+								<ul>
+									<button onclick="zmienStyl('css1.css')">Zmień Styl 1</button>
+									<button onclick="zmienStyl('css2.css')">Zmień Styl 2</button>
+								</ul>
+						<!-- JavaScript -->
+						<script>
+							function zmienStyl(nazwaStylu) {
+								document.getElementById('stylCSS').href = nazwaStylu;
+								window.scrollTo(0, 0);
+							}
+						</script>
+						<h3>YouTube</h3>
+							<p><a href="https://www.youtube.com/watch?v=2QntC2e4HpQ&t=101s" target="_blank">How AI is Transforming Remote Sensing Applications</a></p>
+							<p><a href="https://www.youtube.com/watch?v=9V_Mz7NDy3o" target="_blank">Geographic Information Systems (GIS): Dan Scollon at TEDxRedding</a></p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>(C) 2023 AI1 RD51625 GIS</p>
+		</div>
+
+	</body>
+</html>

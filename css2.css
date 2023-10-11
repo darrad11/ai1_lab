@@ -1,0 +1,200 @@
+/* rd51625 grN1 css2.css */
+* {
+	box-sizing: border-box;
+}
+html {
+	font-family: "Lucida Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body { 
+	font: georgia, sans-serif;
+	line-height: 2;
+	color: #4f4d4a; 
+	background-image: url('pexels-mihis-alex-21014.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #fff;
+	text-align: center;
+	height: 190px;
+	padding: 40px;
+	padding-top: 30px;
+	display: center;
+}	
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}	
+	
+h1 {
+	text-align: center;
+	display: center;
+	animation-name: kolor;
+	animation-duration: 10s;
+}
+@keyframes kolor {
+  0%   {color: #f3cd89;}
+  25%  {color: #fffaf1;}
+  50%  {color: #e5a735;}
+  100% {color: #4f4d4a;}
+}
+
+h2 {
+	background-color: #F3CD89;
+	border-radius: 25%;
+	font-style: italic;
+	text-align: center;
+	display: center;
+}
+h3 {
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	font-weight: bold;
+	color: #7D775C;
+	text-align: center;
+	display: center;
+}	
+	
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	animation-name: kolor;
+	animation-duration: 10s;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	background-color: #7D775C;
+	border-radius: 35%;
+	text-align: center;
+	margin-bottom: 7px;
+	padding: 8px;
+}
+.menu a {
+	color: #ffffff;
+}	
+
+.row {
+	background-color: #fcf5e7;
+}	
+.row ul {
+    text-align: italic;
+	margin: 40px;
+    padding: 0;
+}
+.row ol {
+	text-align: italic;
+    margin: 40px;
+    padding: 0;
+}
+.row p {
+	text-align: justify;
+    margin: 15px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #52917b;
+}
+a:hover {
+    color: #555;
+}
+
+button {
+	background-color: #52917b;
+	border: none;
+	width: 100%;
+	border-radius: 45%;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 32px;
+	font-size: 16px;
+}
+button:hover {
+    color: #555;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 5%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.separator {
+	background-color: #F3CD89;
+	width: 1.0;
+    height: 5px;
+    margin: 20px;
+}
+
+.aside {
+    color: #333;
+	text-align: center;
+    padding: 40px;
+}
+.aside p {
+	text-align: left;
+}
+
+.footer { 
+	color: #ffffff;
+	text-align: center;
+	font-style: underline;
+	font-size: 20px;
+	padding: 200px; 
+}
+
+/*from w3school.com*/
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
