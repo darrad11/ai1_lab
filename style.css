@@ -1,0 +1,161 @@
+/* rd51625 grN1 lab b style.css */
+
+* {
+	color: #555843;
+}
+
+body {
+	height: 100%;
+	margin: 3px;
+}
+
+.background_img {
+	background-image: url("tlo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*naglowek*/
+header {
+    padding: 30px 40px;
+	text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1 {
+    margin: 3;
+}
+
+clock {
+	margin: 2;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 93%;
+    margin: 15px;
+	float: left;
+	font-size: 16px;
+}
+
+/*podswietlenie*/
+.highlight {
+    background-color: #F5EEC8;
+    font-weight: bold;
+}
+
+
+/*lista*/
+ul {
+    margin: 10;
+	width: 90%;
+}
+
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #EBF3E8;
+	font-size: 18px;
+	transition: 0.2s;
+}
+
+ul li:nth-child(odd) {
+	background: #D2E3C8;
+}
+
+ul li:hover {
+	background: #B2C8BA;
+}
+
+ul li.checked {
+	background: #86A789;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+.edit-button {
+    padding: 2px;
+	width: 10%;
+	background: #F0F0F0;
+    border: 0.1;
+	border-color: #bbb;
+	float: right; 
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.save-button {
+    padding: 2px;
+	width: 10%;
+	background: #F0F0F0;
+    border: 0.1;
+	border-color: #bbb;
+	float: right; 
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.delete-button {
+    padding: 2px;
+	width: 10%;
+	background: #F0F0F0;
+    border: 0.1;
+	border-color: #bbb;
+	float: right; 
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/*dodawanie zadan*/
+#add-task {
+    display: flex;
+	width: 90%;
+	margin: 30px;
+	padding: 5px;
+    align-items: center;
+}
+
+#task-title {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#due-date {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#add-button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+	background-color: #bbb;
+	color: #555843;
+}
+
+/*stopka*/
+footer {
+    padding: 10px;
+	text-align: center;
+	font-size: 16px;
+}
