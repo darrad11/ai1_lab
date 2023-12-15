@@ -1,0 +1,140 @@
+/* rd51625 grN1 lab d style.css */
+
+* {
+	color: #555843;
+}
+
+body {
+	height: 100%;
+	margin: 3px;
+	font-family: Arial, sans-serif;
+}
+
+.background_img {
+	background-image: url("tlo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/*
+.sunny_default {
+    background-image: url('tlo.jpg');
+}
+
+.rainy {
+    background-image: url('tlo1.jpg');
+}
+
+.snowy {
+    background-image: url('tlo2.jpg');
+}*/
+
+header {
+    padding: 30px 40px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	display: center;
+}
+h2 {
+	text-align: center;
+	display: center;
+}
+h3 {
+	font-style: italic;
+	text-align: center;
+	display: center;
+}
+
+#input {
+	margin: 20px;
+    padding: 20px;
+	display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#button {
+	margin: 20px;
+	text-align: center;
+	justify-content: center;
+    background-color: #B4BDFF;
+    border: none;
+    border-radius: 10px;
+    color: #3081D0;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+button {
+	text-align: center;
+	justify-content: center;
+    background-color: #B4BDFF;
+    border: none;
+    border-radius: 10px;
+    color: #3081D0;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+button:hover {
+    color: #F4F27E;
+}
+
+#currentWeather:empty {
+    display: none;
+}
+
+#currentWeather {
+	margin: 20px;
+    padding: 20px;
+	text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#forecast:empty {
+    display: none;
+}
+
+#forecast {
+	margin: 20px;
+    padding: 20px;
+    column-count: 5;
+    column-gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#forecast h2 {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 10px;
+    column-span: all;
+}
+
+#forecast p {
+	/*width: 20%;
+    box-sizing: border-box;
+    margin: 10px;*/
+	font-size: 14px;
+}
+
+.footer {
+    position: relative;
+	bottom: 0;
+    display: center;
+	text-align: center;
+	font-size: 14px;
+}

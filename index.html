@@ -1,0 +1,32 @@
+<!-- rd51625 grN1 lab d index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link rel="stylesheet" type="text/css" href="style.css" id="stylCSS">
+    <title>Weather App</title>
+</head>
+<body class="background_img">
+
+    <h1>Weather App</h1>
+    
+	<div id="input">
+		<label for="addressInput">Enter Address:</label>
+		<input type="text" id="addressInput" placeholder="Enter city name">
+	</div>
+
+    <div id="button">
+		<button onclick="getWeather()">Show Weather Forecast</button>
+	</div>
+	
+
+    <div id="currentWeather"></div>
+    <div id="forecast"></div>
+
+	<div class="footer"><p>(C) 2023 AI1 RD51625</p></div>
+	
+    <script src="script.js"></script>
+</body>
+</html>
