@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Puzzle JS and Leaflet</title>
+	<link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+	
+	<link rel="stylesheet" href="./leaflet/leaflet.css" />
+	<script src="./leaflet/leaflet.js"></script>
+	<script src="./leaflet/leaflet-image.js"></script>
+	<script src="./leaflet/leaflet-providers.js"></script>
+	<!--<script src="./leaflet/leaflet-src.esm.js"></script>-->
+	<script src="./leaflet/leaflet-src.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+   
+</head>
+
+<body>
+	<h2>Puzzle JS and Leaflet</h2>
+    <div id="map"></div>
+	<div id="buttons">
+		<button id="getLocation" onclick="getLocation()">Get Current Location</button>
+		<button id="saveButton">Save Raster Map</button>
+		<button id="checkGameButton">CHECK PUZZLE</button>
+		<button id="resetButton">Reset Game</button>
+		<div id="positionInfo">
+			<p><u>Latitude:</u> <span id="latitude"></span> <br>
+			<u>Longitude:</u> <span id="longitude"></span></p>
+		</div>
+		<div id="winMessage"></div>
+	</div>
+	
+	<div><i>Raster Map and Game Board</i></div>	
+	<div id="tables">
+		<canvas id="rasterMap"></canvas>
+		<div id="board"></div>
+	</div>
+	<div><i>Puzzle Pieces<br></i></div>
+	<div id="pieces"></div>
+	<p>(C) 2024 AI1 RD51625 Puzzle JS and Leaflet</p>
+ </body>
+</html>
