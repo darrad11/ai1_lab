@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Projekt Maszynistka grupa N1 Radomska">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Maszynistka</title>
+	<link href="style.css" rel="stylesheet">
+	<script defer src="script.js"></script>
+</head>
+	
+<body>
+		<div class="App">
+			<div class="container">
+				<button id="loginButton">Zaloguj</button>
+				<a href="https://github.com/darrad11/ai1_lab/tree/lab-projekt-zespolowy" target="_blank">
+					<i id="github">Github</i>
+				</a>
+				<div class="header ">
+					<a class="no-style">
+						<h1 id="title">
+							<span>Maszynistka</span>
+						</h1>
+					</a>
+				</div>
+				<p class="instruction">Naciśnij "Start Testu" i Przepisz Tekst Poniżej:</p>
+				<span class="cursor"></span>
+				<div id="quote">
+					<!-- generowanie cytatu przez script.js-->
+				</div>
+				<input type="text" id="inputBox">
+				<div id="capslockWarning" style="display: none;">Caps Lock is ON</div>
+				<div>
+					<button class="button shrink-animation" id="refreshButton">Start Testu</button>
+					<button class="button" id="repeatButton">Powtórz Podejście</button>
+					<button class="button" id="customButton">Dodaj Własny Tekst</button>
+				</div>
+				<br>
+				<div id="timerDisplay">Czas:</div>
+				<div id="finishedTests">Ukończone lekcje: 0</div>
+				<br>
+				<div class="stats">
+					<div class="stat" id="quote-label">
+						<label>Wczytaj Poziom:</label>
+					</div>
+					<div class="radio-container">
+						<label>
+							<input type="radio" name="quoteLevel" value="easy"></input>
+							Łatwy
+						</label>
+						<label>
+							<input type="radio" name="quoteLevel" value="medium"></input>
+							Średni
+						</label>
+						<label>
+							<input type="radio" name="quoteLevel" value="hard"></input>
+							Trudny
+						</label>
+					</div>
+				</div>
+				<div class="stats">
+					<div class="stat">
+						<table id="statisticTable">
+							<tr>
+								<th>Szybkość pisania ZNM</th>
+								<th>Średnia szybkość pisania</th>
+								<th>Postęp</th>
+								<th>Ocena</th>
+							</tr>
+							<!-- wiersze tabeli wyniki dodane przez script.js-->
+						</table>
+					</div>	
+				</div>	
+				
+				<!-- dla informacji -->
+				<table>
+					<tr>
+						<th>Ocena</th>
+						<th>Ilość Słów Na Min (WPM)</th>
+						<th>Ilość Znaków Na Min (CPM)</th>
+					</tr>
+					<tr>
+						<td>Przeciętna szybkość</td>
+						<td>ponad 40 WPM</td>
+						<td>ponad 200 CPM</td>
+					</tr>
+					<tr>
+						<td>Dobra szybkość</td>
+						<td>ponad 60 WPM</td>
+						<td>ponad 300 CPM</td>
+					</tr>
+					<tr>
+						<td>Super szybkość</td>
+						<td>ponad 120 WPM</td>
+						<td>ponad 600 CPM</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+</body>
+
+</html>
